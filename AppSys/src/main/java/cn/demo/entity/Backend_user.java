@@ -4,45 +4,45 @@ import java.util.Date;
 
 public class Backend_user {
 	/**
-	 * 
+	 * 	主键id
 	 */
-	private Integer id;//主键id
+	private Integer id;
 	/**
-	 * 
+	 * 	用户编码（登录账号）
 	 */
-	private String userCode;//用户编码（登录账号）
+	private String userCode;
 	/**
-	 * 
+	 * 	用户名称
 	 */
-	private String userName;//用户名称
+	private String userName;
 	/**
-	 * 
+	 * 	用户密码
 	 */
-	private String userPassword;//用户密码
+	private String userPassword;
 	/**
-	 * 
+	 * 	用户角色类型id
 	 */
-	private Integer userType;//用户角色类型id
+	private Integer userType;
 	/**
-	 * 
+	 * 	创建者
 	 */
-	private Integer createdBy;//创建者
+	private Integer createdBy;
 	/**
-	 * 
+	 * 	创建时间
 	 */
-	private Date creationDate;//创建时间
+	private Date creationDate;
 	/**
-	 * 
+	 * 	更新者
 	 */
-	private Integer modifyBy;//更新者
+	private Integer modifyBy;
 	/**
-	 * 
+	 * 	更新时间
 	 */
-	private Date modifyDate;//更新时间
+	private Date modifyDate;
 	/**
-	 * 
+	 * 	用户角色类型名称
 	 */
-	private String userTypeName;//用户角色类型名称
+	private String userTypeName;
 	public Integer getId() {
 		return id;
 	}
