@@ -65,6 +65,7 @@ public class Version {
 	 * 	上传的apk文件名称
 	 */
 	private String apkFileName;
+	
 	public Integer getId() {
 		return id;
 	}
