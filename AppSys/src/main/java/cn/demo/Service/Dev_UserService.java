@@ -15,5 +15,5 @@ public interface Dev_UserService {
 	 * @param userPassword
 	 * @return
 	 */
-	public User dev_UserLogin(@Param("userCode")String userCode,@Param("userPassword")String userPassword );
+	public User dev_UserLogin(@Param("devCode")String devCode,@Param("devPassword")String devPassword );
 }

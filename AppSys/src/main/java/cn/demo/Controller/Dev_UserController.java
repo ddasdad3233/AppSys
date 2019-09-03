@@ -25,11 +25,6 @@ public class Dev_UserController {
 	private Logger log = Logger.getLogger(Dev_UserController.class);
 	@Resource
 	private Dev_UserService dev_UserService;
-	
-	@RequestMapping(value="changeindex")
-	public String changeLogin() {
-		return "index";
-	}
 
 	/**
 	 * 开发者用户登录
@@ -41,25 +36,14 @@ public class Dev_UserController {
 	}
 	
 	@RequestMapping(value="/dologin",method=RequestMethod.POST)
-	public String doLogin(@RequestParam String userCode,@RequestParam String userPassword,HttpServletRequest request,HttpSession session){
-		log.debug("doLogin====================================");
-		//调用service方法，进行用户匹配
-		User user = null;
-		try {
-			user = dev_UserService.dev_UserLogin(userCode, userPassword);
-		} catch (Exception e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		if(null != user){//登录成功
-			//放入session
-			session.setAttribute("user", user);
-			//页面跳转（main.jsp）
-			return "redirect:/dev/developer/main";
-		}else{
-			//页面跳转（login.jsp）带出提示信息--转发
-			request.setAttribute("error", "用户名或密码不正确");
-			return "devlogin";
-		}
+	public String doLogin(@RequestParam(value = "devCode",required = false,defaultValue = "")String devCode,
+			   @RequestParam(value = "devPassword",required = false,defaultValue = "")String devPassword,HttpSession session,HttpServletRequest request) {
+			User user=dev_UserService.dev_UserLogin(devCode, devPassword);
+			if (null!=user) {
+			session.setAttribute("user",user);
+			return "developer/main";
+			}else {
+				return "devlogin";
+			}	
 	}
 }

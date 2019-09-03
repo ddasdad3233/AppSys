@@ -4,6 +4,6 @@
   <!-- 开发者登录 -->
   <select id="dev_UserLogin" resultType="User">
   	select * from dev_user where
-  	userCode=#{userCode} and userPassword=#{userPassword}
+  	devCode=#{devCode} and devPassword=#{devPassword}
   </select>
 </mapper>

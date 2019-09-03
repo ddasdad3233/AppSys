@@ -22,8 +22,8 @@ public class Dev_UserServiceImpl implements Dev_UserService {
 	 * @param userPassword
 	 * @return
 	 */
-	public User dev_UserLogin(String userCode, String userPassword) {	
-		return dev_UserDao.dev_UserLogin(userCode, userPassword);
+	public User dev_UserLogin(String devCode, String devPassword) {	
+		return dev_UserDao.dev_UserLogin(devCode, devPassword);
 	}
 
 }
