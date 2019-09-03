@@ -14,6 +14,8 @@
 	<!--扫描注解标识的类 -->
 	<context:component-scan
 		base-package="cn.demo.Controller"></context:component-scan>
+	<!--配置静态资源引用 -->
+	<mvc:resources mapping="/statics/**" location="/statics/"/>
 	<!--提供对控制器类注解的支持 -->
 	<mvc:annotation-driven>
 		<mvc:message-converters>
@@ -60,8 +62,6 @@
 			</list>
 		</property>
 	</bean>
-	<!--配置静态资源引用 -->
-	<mvc:resources location="/statics/" mapping="/statics/**" />
 	<!-- 配置全局异常 -->
 	<!-- <bean class="org.springframework.web.servlet.handler.SimpleMappingExceptionResolver"> 
 		<property name="exceptionMappings"> <props> 出现 java.lang.RuntimeException异常跳转到error页面 
