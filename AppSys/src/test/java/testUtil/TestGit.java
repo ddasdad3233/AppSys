@@ -1,4 +1,4 @@
-package test;
+package testUtil;
 
 public class TestGit {
 	
