@@ -14,8 +14,6 @@
 	<!--扫描注解标识的类 -->
 	<context:component-scan
 		base-package="cn.demo.Controller"></context:component-scan>
-	<!--配置静态资源引用 -->
-	<mvc:resources mapping="/statics/**" location="/statics/"/>
 	<!--提供对控制器类注解的支持 -->
 	<mvc:annotation-driven>
 		<mvc:message-converters>
@@ -40,6 +38,8 @@
 			</bean>
 		</mvc:message-converters>
 	</mvc:annotation-driven>
+	<!--配置静态资源引用 -->
+	<mvc:resources location="/statics/" mapping="/statics/**"></mvc:resources>
 	<!-- 多视图解析器 -->
 	<bean
 		class="org.springframework.web.servlet.view.ContentNegotiatingViewResolver">
