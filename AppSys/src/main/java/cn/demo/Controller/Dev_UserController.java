@@ -53,4 +53,14 @@ public class Dev_UserController {
 				return "devlogin";
 			}	
 	}
+	/**
+	 * 开发者用户注销
+	 * @param session
+	 * @return
+	 */
+	@RequestMapping(value="/exit")
+	public String devExit(HttpSession session) {
+		session.removeAttribute("user");
+		return "devlogin";
+	}
 }
