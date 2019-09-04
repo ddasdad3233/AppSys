@@ -55,7 +55,7 @@
 						</div>
 						<div class="profile_info">
 							<span>Welcome,</span>
-							<h2>${devUserSession.devCode }</h2>
+							<h2>${user.devCode }</h2>
 						</div>
 					</div>
 					<!-- /menu profile quick info -->
@@ -66,7 +66,7 @@
 					<div id="sidebar-menu"
 						class="main_menu_side hidden-print main_menu">
 						<div class="menu_section">
-							<h3>${devUserSession.devName }</h3>
+							<h3>${user.devName }</h3>
 							<ul class="nav side-menu">
 								<li><a><i class="fa fa-home"></i> APP账户管理 <span
 										class="fa fa-chevron-down"></span>
@@ -121,11 +121,11 @@
 								class="user-profile dropdown-toggle" data-toggle="dropdown"
 								aria-expanded="false"> <img
 									src="${pageContext.request.contextPath }/statics/images/img.jpg"
-									alt="">${devUserSession.devCode } <span
+									alt="">${user.devCode } <span
 									class=" fa fa-angle-down"></span> </a>
 								<ul class="dropdown-menu dropdown-usermenu pull-right">
 									<li><a
-										href="${pageContext.request.contextPath }/dev/logout"><i
+										href="${pageContext.request.contextPath }/dev/exit"><i
 											class="fa fa-sign-out pull-right"></i> Log Out</a>
 									</li>
 								</ul></li>

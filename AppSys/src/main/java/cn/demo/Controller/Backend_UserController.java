@@ -49,8 +49,16 @@ public class Backend_UserController {
 				return "backend/main";
 			}else {
 				return "backendlogin";
-			}
-		
-		
+			}			
+	}
+	/**
+	 * 超级管理员注销
+	 * @param session
+	 * @return
+	 */
+	@RequestMapping(value="exit")
+	public String backExit(HttpSession session) {
+		session.removeAttribute("backenduser");
+		return "backendlogin";
 	}
 }
