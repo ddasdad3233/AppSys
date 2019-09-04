@@ -34,7 +34,14 @@ public class Dev_UserController {
 		log.debug("LoginController welcome AppInfoSystem backend==================");
 		return "devlogin";
 	}
-	
+	/**
+	 * 开发者登录判断
+	 * @param devCode
+	 * @param devPassword
+	 * @param session
+	 * @param request
+	 * @return
+	 */
 	@RequestMapping(value="/dologin",method=RequestMethod.POST)
 	public String doLogin(@RequestParam(value = "devCode",required = false,defaultValue = "")String devCode,
 			   @RequestParam(value = "devPassword",required = false,defaultValue = "")String devPassword,HttpSession session,HttpServletRequest request) {

@@ -24,7 +24,7 @@ public class Backend_UserServiceImpl implements Backend_UserService {
 	 */
 	public Backend_user backend_UserLogin(String userCode, String userPassword) {
 		// TODO Auto-generated method stub
-		return backend_UserLogin(userCode, userPassword);
+		return backend_UserDao.backend_UserLogin(userCode, userPassword);
 	}
 
 }

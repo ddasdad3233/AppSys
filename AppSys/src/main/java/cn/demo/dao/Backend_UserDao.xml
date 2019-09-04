@@ -3,6 +3,6 @@
 <mapper namespace="cn.demo.dao.Backend_UserDao">
  	<select id="backend_UserLogin" resultType="Backend_user">
  		select * from backend_user
- 		where userCode#{userCode} and userPassword=#{userPassword}
+ 		where userCode=#{userCode} and userPassword=#{userPassword}
  	</select>
 </mapper>

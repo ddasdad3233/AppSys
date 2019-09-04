@@ -4,9 +4,13 @@
 <div class="page-title">
 	<div class="title_left">
 		<h3>
+<<<<<<< HEAD
+			欢迎你：${user.userName}<strong> | 角色：开发者账户</strong>
+=======
 			欢迎你：${devUserSession.devName }<strong> | 角色：开发者账户</strong>
+>>>>>>> a5d7049495dbab1d44f4a991eaefcbd2e870909a
 		</h3>
 	</div>
 </div>
 <div class="clearfix"></div>
-<%@include file="common/footer.jsp"%>
+<%@include file="/common/footer.jsp"%>
