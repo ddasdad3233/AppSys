@@ -6,40 +6,44 @@ import cn.demo.entity.Version;
 
 public interface AppVersionService {
 	/**
-	 * 根据Id查询相应的版本列表
-	 * @param Id
+	 * 根据appId查询相应的app版本列表
+	 * 
+	 * @param appId
 	 * @return
-	 * @throws Exception
 	 */
-	public List<Version> getVersionList(Integer Id)throws Exception;
+	public List<Version> getAppVersionList(Integer appId);
+
 	/**
-	 * 新增版本信息，并更新_info表的versionId字段
-	 * @param Version
+	 * 新增app版本信息，并更新app_info表的versionId字段
+	 * 
+	 * @param appVersion
 	 * @return
-	 * @throws Exception
 	 */
-	public boolean sysadd(Version Version)throws Exception;
+	public boolean appsysadd(Version appVersion);
+
 	/**
-	 * 根据id获取Version
+	 * 根据id获取AppVersion
+	 * 
 	 * @param id
 	 * @return
 	 * @throws Exception
 	 */
-	public Version getVersionById(Integer id)throws Exception;
-	
+	public Version getAppVersionById(Integer id) throws Exception;
+
 	/**
-	 * 修改版本信息
-	 * @param Version
+	 * 修改app版本信息
+	 * 
+	 * @param appVersion
 	 * @return
 	 * @throws Exception
 	 */
-	public boolean modify(Version Version)throws Exception;
-	
+	public boolean modify(Version appVersion) throws Exception;
+
 	/**
 	 * 删除apk文件
+	 * 
 	 * @param id
 	 * @return
-	 * @throws Exception
 	 */
-	public boolean deleteApkFile(Integer id)throws Exception;
+	public boolean deleteApkFile(Integer id) throws Exception;
 }

@@ -27,7 +27,7 @@ public interface AppInfoMapper {
 	 * @param id
 	 * @return
 	 */
-	public int delectAppInfoByid(@Param(value="id")Integer id);
+	public int delectAppInfoByid(@Param(value="id")Integer delId);
 	
 	/**
 	 * 	根据条件查询出app列表
