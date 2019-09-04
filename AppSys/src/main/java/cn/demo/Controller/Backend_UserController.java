@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import cn.demo.Service.Backend_UserService;
 
 /**
- * 超级管理员控制类
+ * 	超级管理员控制类
  * @author 朱威
  */
 @Controller

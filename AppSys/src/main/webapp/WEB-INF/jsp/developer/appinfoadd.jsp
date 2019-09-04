@@ -10,7 +10,14 @@
              <div class="clearfix"></div>
       </div>
       <div class="x_content">
-	  
+	  <!-- <div class="item form-group">
+               <label class="control-label col-md-3 col-sm-3 col-xs-12" ></label>
+               <div class="col-md-6 col-sm-6 col-xs-12">
+                 <form action="uploadlogo" class="dropzone" style="height:100px;">
+                 </form>
+            <div class="clearfix"></div>
+         </div>
+       </div> -->
            <div class="clearfix"></div>
         <form class="form-horizontal form-label-left" action="appinfoaddsave" method="post" enctype="multipart/form-data">
           <div class="item form-group">
