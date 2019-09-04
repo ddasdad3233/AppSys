@@ -14,24 +14,24 @@
 <title>APP开发者平台</title>
 
 	<!-- Bootstrap -->
-	<link href="../statics/css/bootstrap.min.css" rel="stylesheet">
+	<link href="${pageContext.request.contextPath }/statics/css/bootstrap.min.css" rel="stylesheet">
 	<!-- Font Awesome -->
-	<link href="../statics/css/font-awesome.min.css" rel="stylesheet">
+	<link href="${pageContext.request.contextPath }/statics/css/font-awesome.min.css" rel="stylesheet">
 	<!-- NProgress -->
-	<link href="../statics/css/nprogress.css" rel="stylesheet">
+	<link href="${pageContext.request.contextPath }/statics/css/nprogress.css" rel="stylesheet">
 	<!-- iCheck -->
-	<link href="../statics/css/green.css" rel="stylesheet">
+	<link href="${pageContext.request.contextPath }/statics/css/green.css" rel="stylesheet">
 	<!-- bootstrap-progressbar -->
-	<link href="../statics/css/bootstrap-progressbar-3.3.4.min.css" rel="stylesheet">
+	<link href="${pageContext.request.contextPath }/statics/css/bootstrap-progressbar-3.3.4.min.css" rel="stylesheet">
 	<!-- JQVMap -->
-	<link href="../statics/css/jqvmap.min.css" rel="stylesheet" />
-	<link href="../statics/css/dropzone.min.css" rel="stylesheet">
+	<link href="${pageContext.request.contextPath }/statics/css/jqvmap.min.css" rel="stylesheet" />
+	<link href="${pageContext.request.contextPath }/statics/css/dropzone.min.css" rel="stylesheet">
 	<!-- Custom Theme Style -->
-	<link href="$../statics/css/custom.min.css"	rel="stylesheet">
+	<link href="${pageContext.request.contextPath }/statics/css/custom.min.css"	rel="stylesheet">
 	
 	<!-- add localcss 2016-8-18 -->
-	<link href='../statics/localcss/appinfoadd.css' rel='stylesheet'>
-	<link href='../statics/localcss/appinfolist.css' rel='stylesheet'>
+	<link href='${pageContext.request.contextPath }/statics/localcss/appinfoadd.css' rel='stylesheet'>
+	<link href='${pageContext.request.contextPath }/statics/localcss/appinfolist.css' rel='stylesheet'>
 </head>
 <body class="nav-md footer_fixed">
 	<div class="container body">
@@ -50,7 +50,7 @@
 					<div class="profile">
 						<div class="profile_pic">
 							<img
-								src="../statics/images/img.jpg"
+								src="${pageContext.request.contextPath }/statics/images/img.jpg"
 								alt="..." class="img-circle profile_img">
 						</div>
 						<div class="profile_info">
@@ -81,7 +81,7 @@
 										class="fa fa-chevron-down"></span>
 								</a>
 									<ul class="nav child_menu">
-										<li><a href="../dev/flatform/app/list">APP维护</a>
+										<li><a href="${pageContext.request.contextPath }/dev/flatform/app/list">APP维护</a>
 										</li>
 									</ul></li>
 							</ul>
