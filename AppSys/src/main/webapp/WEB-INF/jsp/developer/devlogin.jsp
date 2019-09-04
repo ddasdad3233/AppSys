@@ -113,13 +113,7 @@
             </div>
         </div>
     </div>
-<script>
-	$("form").submit(function(){
-		var userCode=$("#userCode").val();
-		var userPassword=$("#userPassword").val();
-		$("body").load("${pageContext.request.contextPath}/sys/developer/devlogin","userCode="+userCode+"&userPassword="+userPassword);
-	});
-</script>
+
 </body>
 
 </html>
